@@ -46,10 +46,10 @@ qu.then(res => {
         ques.classList.add('font-weight-normal')
         ques.innerText = `${q.question}`
 
-        let div1 = document.createElement('div')
-        div1.classList.add("form-check")
-        div1.classList.add("my-2")
-        div1.classList.add('text-white')
+        let optDiv = document.createElement('div')
+        optDiv.classList.add("form-check")
+        optDiv.classList.add("my-2")
+        optDiv.classList.add('text-white')
 
 
         while (k < 4) {
@@ -100,10 +100,10 @@ qu.then(res => {
             label.classList.add('mb-2')
 
             //APPENDING child to PARENT
-            div1.appendChild(input)
-            div1.appendChild(label)
+            optDiv.appendChild(input)
+            optDiv.appendChild(label)
             div.appendChild(ques)
-            div.appendChild(div1)
+            div.appendChild(optDiv)
 
             sForm.appendChild(div)
 
